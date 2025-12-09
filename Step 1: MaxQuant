@@ -1,0 +1,26 @@
+#Load Raw Files
+* Go to the “Raw files” tab.
+* Click “Load folder” under input data and select the folder containing your `.raw` files (Thermo RAW or other vendor formats).
+
+
+#Set Up Experiment / Sample Groups
+* In the “Raw files” tab under "Experimental design file" select "Read from file" and upload the "experimentalDesign.txt" file
+
+#"Group-specific parameters"
+*"Label-free quantification": LFQ
+
+#Configure FASTA Database
+* Go to the “Global parameters” tab.
+* Set Fasta files: select the FASTA file(s) for your organism (e.g., Uniprot human/mouse proteome).
+
+#Save MQpar.xml
+* Click “Save parameters” in MaxQuant.
+* By default, it saves in the MaxQuant working directory.
+
+#Now run MaxQuant in Linux
+cd MaxQuant
+dotnet bin/MaxQuantCmd.dll input/mqpar/mqpar.xml --changeFolder input/mqpar/mqpar.new.xml input/fasta/ input/raw/
+dotnet bin/MaxQuantCmd.dll input/mqpar/mqpar.new.xml
+
+
+  
