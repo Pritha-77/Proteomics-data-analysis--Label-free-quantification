@@ -1,6 +1,6 @@
 #Load Raw Files
 * Go to the “Raw files” tab.
-* Click “Load folder” under input data and select the folder containing your `.raw` files (Thermo RAW or other vendor formats).
+* Click “Load folder” under input data and select the folder containing your `.raw` files.
 
 
 #Set Up Experiment / Sample Groups
